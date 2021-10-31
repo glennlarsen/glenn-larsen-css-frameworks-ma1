@@ -1,0 +1,28 @@
+.row__item {
+  display: flex;
+  justify-content: center;
+}
+
+.square-common {
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  border-radius: 15px;
+  height: 264px;
+  width: 264px;
+  margin-bottom: 30px;
+}
+
+.row__square {
+  @extend .square-common;
+  @include square-background(primary);
+
+  &--white {
+    @include square-background(white);
+    @include square-border(secondary);
+  }
+
+  &--pink {
+    @include square-background(secondary);
+    @include square-border(white);
+  }
+}

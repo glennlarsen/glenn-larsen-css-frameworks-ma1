@@ -1,0 +1,20 @@
+.navbar {
+  background-color: getColour(primary) !important;
+
+  &__brand {
+    font-weight: bold;
+    font-size: 1.5em;
+  }
+
+  &__link {
+    font-family: $font-nav;
+  }
+
+  &__link--active {
+    color: getColour(secondary) !important;
+  }
+
+  &__collapse {
+    flex-grow: 0;
+  }
+}

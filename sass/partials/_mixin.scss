@@ -1,0 +1,7 @@
+@mixin square-background($colour) {
+  background: getColour($colour);
+}
+
+@mixin square-border($colour) {
+  border: 2px solid getColour($colour);
+}

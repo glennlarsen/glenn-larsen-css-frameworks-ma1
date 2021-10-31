@@ -1,0 +1,23 @@
+footer {
+  background: getColour(primary);
+  flex-shrink: 0;
+  color: getColour(grey);
+  padding: 0.7rem;
+  font-size: 0.8rem;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: getColour(grey);
+  }
+}
